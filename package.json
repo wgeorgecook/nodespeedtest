@@ -2,9 +2,10 @@
   "name": "nodespeedtest",
   "version": "1.0.0",
   "dependencies": {
-    "twitter": "*",
-    "speedtest-net": "*"
-},
+    "mocha": "^5.2.0",
+    "speedtest-net": "*",
+    "twitter": "*"
+  },
   "repository": "https://github.com/wgeorgecook/nodespeedtest",
   "description": "Runs internet speed test and tweet result",
   "main": "speedtest.js",
