@@ -1,0 +1,15 @@
+{
+  "name": "nodespeedtest",
+  "version": "1.0.0",
+  "dependencies": {
+    "twitter": "*"
+},
+  "repository": "https://github.com/wgeorgecook/nodespeedtest",
+  "description": "Runs internet speed test and tweet result",
+  "main": "speedtest.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William George Cook",
+  "license": "MIT"
+}
