@@ -55,3 +55,6 @@ async function postTweet(tester) {
 }
 
 postTweet(test)
+
+module.exports = updateResults;
+module.exports = postTweet;
