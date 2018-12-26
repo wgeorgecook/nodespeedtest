@@ -1,5 +1,4 @@
 # An Internet Speed Test for Node
-
 Do you question if you're really getting the internet speeds you pay for? Do you wish you could let your ISP know when speeds dip below acceptable values? With this little app, you have some scaffolding to start off with!
 
 ## Installation
@@ -10,3 +9,6 @@ I did not build any logic to include when the bot will tweet, nor which account 
 
 ## Configuration
 Rename `settingsTemplate.json` to `settings.json` and paste your access tokens from Twitter in their respective values. The `speedtest.js` will use those values to authenticate to Twitter when it goes to post a tweet.
+
+## Background
+This is a port of my [Python app that does the same thing](https://github.com/wgeorgecook/twitterspeedtest). It was a way for me to learn using node.js as a backend framework.
