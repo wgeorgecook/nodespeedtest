@@ -1,3 +1,6 @@
+
+var assert = require('assert');
+
 describe('Speedtests', function() {
 
     it('Gets a download value', function() {
@@ -15,4 +18,5 @@ describe('Twitter', function() {
     it('Authenticates', function() {
         assert.equal(true, true);
     })
+
 });
