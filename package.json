@@ -2,7 +2,8 @@
   "name": "nodespeedtest",
   "version": "1.0.0",
   "dependencies": {
-    "twitter": "*"
+    "twitter": "*",
+    "speedtest-net": "*"
 },
   "repository": "https://github.com/wgeorgecook/nodespeedtest",
   "description": "Runs internet speed test and tweet result",
