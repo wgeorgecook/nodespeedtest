@@ -3,40 +3,30 @@
 
 // Speedtest data
 const speedTest = require('speedtest-net');
+const test = speedTest({maxTime: 5000});
 
-
-let getResults = () =>  new Promise(function(resolve, reject) {
-    try {
-        let test = speedTest({maxTime: 5000});
+async function getResults() {
+    return new Promise(function(resolve) {
         test.on('data', data => {
             resolve(data.speeds);
-        });
-    } catch (err) {
-        reject(err)
-    }
-})
+        })
+    })
+}
 
 
 
 
 async function updateResults() {
-    let results = {
-        download: null,
-        upload: null
+    const data = await getResults();
+    const results = {
+        download: data.download,
+        upload: data.upload
     };
-
-    try {
-        const data = await getResults()
-        results.download = data.download;
-        results.upload = data.upload;
-        return results;
-    } catch (err) {
-        console.log("Error: ")
-        console.log(err)
-    }
+    console.log(results);
+    return results;
 }
 
 // updateResults();
 
 
-module.exports.updateResults = updateResults;
+module.exports.getResults = getResults;
